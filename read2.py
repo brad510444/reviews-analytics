@@ -25,3 +25,12 @@ for s in data:
 		mata.append(s)
 
 print('一共有', len(mata), '筆資料長度小於100')
+
+good = []
+
+for a in data:
+	if 'good' in a:
+		good.append(a)
+
+print('一共有', len(good),'個留言提到good')
+print(good[0])
