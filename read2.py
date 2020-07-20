@@ -17,3 +17,11 @@ for d in data:
 	sum_len += len(d) #sum_len = sum_len + len(d)
 
 print('平均長度是', sum_len/len(data))
+
+mata = []
+
+for s in data:
+	if len(s) < 100:
+		mata.append(s)
+
+print('一共有', len(mata), '筆資料長度小於100')
