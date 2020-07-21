@@ -26,7 +26,7 @@ for s in data:
 
 print('一共有', len(mata), '筆資料長度小於100')
 
-good = []
+good = [] #清單快寫法 good[a for a in data if 'good' in d] 第一個a 代表 good.append(a)
 
 for a in data:
 	if 'good' in a:
@@ -34,3 +34,15 @@ for a in data:
 
 print('一共有', len(good),'個留言提到good')
 print(good[0])
+
+bad = [d for d in data if 'bad' in d]
+print(bad[0])
+
+bad = [1 for d in data if 'bad' in d]
+print(bad[0])
+
+bad = ['bad' in d for d in data]
+
+bad = []
+for d in data:
+	bad.append('bad' in d)
